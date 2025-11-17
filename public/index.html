@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker (Node.js/JS)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>🏆 Мой Трекер Привычек</h1>
+    </header>
+
+    <main>
+        <section class="habit-form-section">
+            <h2>✨ Добавить новую привычку</h2>
+            <form id="add-habit-form">
+                <input type="text" id="habit-name" placeholder="Название привычки (напр., Пить воду)" required>
+                <textarea id="habit-description" placeholder="Описание (напр., 8 стаканов в день)"></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Добавить
+                </button>
+            </form>
+        </section>
+
+        <section class="habit-list-section">
+            <h2>🎯 Текущие Привычки</h2>
+            <div id="habit-list" class="habit-grid">
+                <p id="loading-message" class="loading-message">Загрузка привычек...</p>
+            </div>
+            <p id="no-habits-message" class="hidden">Пока нет привычек. Добавьте первую, чтобы начать!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Проект для портфолио на HTML, CSS, JavaScript и Node.js/Express</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
